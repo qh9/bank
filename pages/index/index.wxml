@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view>
+    
+    <view class="section">
+        <view class="sec-top">
+            <text>银行卡</text> 
+            <input placeholder='请选择银行' value="{{bank}}"></input>
+            <text bindtap='right'>{{right}}</text>
+        </view>
+        <view class="sec-bot">
+            <text>提现金额</text> 
+            <input placeholder='可提现500元' bindinput='money' value="{{num}}"></input>
+        </view>
+        <button bindtap='sure'>确定</button>
+
+    </view>
+</view>

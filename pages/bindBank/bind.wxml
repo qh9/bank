@@ -1,0 +1,26 @@
+<!--pages/bindBank/bind.wxml-->
+<view class="section">
+        <view class="sec-top">
+            <text>银行卡</text> 
+            <input placeholder='请选择银行' value="{{bank}}"></input>
+        </view>
+         <view class="sec-top">
+            <text>银行卡号</text> 
+            <input placeholder='请输入银行卡号' bindinput='card' type="number" value="{{value}}"></input>
+        </view>
+         <view class="sec-top">
+            <text>姓名</text> 
+            <input placeholder='请输入姓名' value="{{name}}"></input>
+        </view>
+        <view class="sec-top">
+            <text>城市</text> 
+            <view class="section">
+            
+             <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">{{array[index]}}</view>
+            </picker>
+            </view>
+        </view>
+        <button bindtap='sure'>确定</button>
+        
+    </view>

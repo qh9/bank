@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<view>
+    <view class="section">
+        <block wx:for="{{list}}" wx:key="index">
+            <view class="bank-item" bindtap='click' data-item="{{item.bank}}" >
+                <view hover-class='active'>{{item.bank}}</view>
+                <!-- <icon type="success"></icon> -->
+            </view>
+        </block>
+    </view>
+</view>

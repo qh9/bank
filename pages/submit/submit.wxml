@@ -1,0 +1,5 @@
+<!--pages/submit/submit.wxml-->
+<view>
+    <view>提交成功</view>
+    <button bindtap='back'>返回</button>
+</view>
